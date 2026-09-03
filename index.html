@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyber Password Analyzer</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Project title -->
+        <h1>CYBER PASSWORD ANALYZER</h1>
+
+        <p>Secure your password. Test its strength.</p>
+
+
+        <!-- Password input -->
+        <div class="password-box">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+            >
+
+            <button id="togglePassword">
+                SHOW
+            </button>
+
+        </div>
+
+
+        <!-- Password strength -->
+        <div class="strength-section">
+
+            <div class="strength-header">
+
+                <span>SECURITY LEVEL</span>
+
+                <span id="strengthText">
+                    WAITING
+                </span>
+
+            </div>
+
+            <!-- Strength bar -->
+            <div class="strength-bar">
+                <div id="strengthFill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- Password requirements -->
+        <div class="requirements">
+
+            <div id="length">
+                ✕ At least 8 characters
+            </div>
+
+            <div id="uppercase">
+                ✕ Uppercase letter
+            </div>
+
+            <div id="lowercase">
+                ✕ Lowercase letter
+            </div>
+
+            <div id="number">
+                ✕ Number
+            </div>
+
+            <div id="special">
+                ✕ Special character
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+/* Remove default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main page */
+body {
+    min-height: 100vh;
+
+    background: #050505;
+
+    color: #00ff88;
+
+    font-family: "Courier New", monospace;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+
+/* Main container */
+.container {
+    width: 90%;
+
+    max-width: 700px;
+
+    padding: 50px;
+
+    border: 1px solid #00ff88;
+
+    background: #0a0f0c;
+
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+}
+
+
+/* Heading */
+h1 {
+    color: #00ff88;
+
+    font-size: 35px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Description */
+p {
+    color: #888;
+
+    font-size: 15px;
+
+    margin-bottom: 35px;
+}
+
+
+/* Password input section */
+.password-box {
+    display: flex;
+
+    border: 1px solid #00ff88;
+
+    background: #050805;
+
+    margin-bottom: 30px;
+}
+
+
+/* Password input */
+.password-box input {
+    flex: 1;
+
+    background: transparent;
+
+    border: none;
+
+    outline: none;
+
+    color: #00ff88;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    padding: 18px;
+}
+
+
+/* Placeholder */
+.password-box input::placeholder {
+    color: #555;
+}
+
+
+/* Show button */
+.password-box button {
+    background: transparent;
+
+    color: #00ff88;
+
+    border: none;
+
+    border-left: 1px solid #00ff88;
+
+    padding: 0 20px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+}
+
+
+/* Button hover effect */
+.password-box button:hover {
+    background: #00ff88;
+
+    color: #000;
+}
+
+
+/* Strength section */
+.strength-section {
+    margin-bottom: 30px;
+}
+
+
+/* Strength header */
+.strength-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Strength bar background */
+.strength-bar {
+    width: 100%;
+
+    height: 10px;
+
+    background: #151515;
+
+    border: 1px solid #222;
+}
+
+
+/* Strength bar fill */
+#strengthFill {
+    width: 0%;
+
+    height: 100%;
+
+    background: #00ff88;
+
+    transition: width 0.3s ease;
+}
+
+
+/* Requirements */
+.requirements {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+/* Individual requirement */
+.requirements div {
+    padding: 13px;
+
+    border: 1px solid #222;
+
+    color: #666;
+
+    font-size: 13px;
+}
+
+
+/* Mobile screen */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .requirements {
+        grid-template-columns: 1fr;
+    }
+}
